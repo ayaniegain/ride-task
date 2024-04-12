@@ -20,7 +20,6 @@ const singleUser = async (req, res) => {
   try {
     const response = await User.findOne({ _id: req.params.id });
 
-    console.log(response);
 
     res.status(200).json(response);
   } catch (err) {
@@ -32,7 +31,6 @@ const deleteUser = async (req, res) => {
   try {
    let user= await User.findByIdAndDelete({ _id: req.params.id });
 
-   console.log(user);
 
     res.status(201).json({user });
 
@@ -72,7 +70,6 @@ const createUser = async (req, res) => {
       alternativeno,
       email,
     });
-    console.log(newUser);
     await newUser.save();
 
     res

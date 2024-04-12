@@ -38,17 +38,15 @@ function EditUser() {
       email !== ""
     ) {
       try {
-        let newUser = await axios.put(`https://ride-task-backend.vercel.app/api/v1/user/${id}`, {
+        let newUser = await axios.put(`http://localhost:8000/api/v1/user/${id}`, {
           firstname: firstname,
           lastname: lastname,
           phone: phone,
           alternativeno: alternativeno,
           email: email,
         });
-        console.log(newUser.data);
         dispatch(updateUser(newUser.data));
         navigate("/");
-        // Avoid using location.reload() here, as React components should handle updates internally
       } catch (error) {
         console.error("Error updating user:", error);
       }

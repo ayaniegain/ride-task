@@ -6,11 +6,10 @@ import CommonNavButton from "./CommonNavButton";
 function ViewUser() {
   const [user, setuser] = useState({});
   let params = useParams();
-  console.log(params.id);
 
   const singleUserShow = async () => {
     let singlUser = await axios.get(
-      `https://ride-task-backend.vercel.app/api/v1/user/${params.id}`
+      `http://localhost:8000/api/v1/user/${params.id}`
     );
     setuser(singlUser);
   };
@@ -19,7 +18,6 @@ function ViewUser() {
     singleUserShow();
   }, []);
 
-  console.log(user);
 
   
   if (!user.data) {
