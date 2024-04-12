@@ -20,7 +20,7 @@ function AllUser() {
 
   const handleDelete = async (id) => {
     let singledeleteUser = await axios.delete(
-      `http://localhost:8000/api/v1/user/${id}`
+      `https://ride-task-backend.vercel.app/api/v1/user/${id}`
     );
 
     // console.log(singledeleteUser.data.user._id);

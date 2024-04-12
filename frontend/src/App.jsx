@@ -41,7 +41,7 @@ function App() {
   let dispatch = useDispatch();
 
   let getAllUserData = async () => {
-    let allUserData = await axios.get("http://localhost:8000/api/v1/user");
+    let allUserData = await axios.get("https://ride-task-backend.vercel.app/api/v1/user");
 
     dispatch(getAllData(allUserData.data));
   };

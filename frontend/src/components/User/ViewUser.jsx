@@ -10,7 +10,7 @@ function ViewUser() {
 
   const singleUserShow = async () => {
     let singlUser = await axios.get(
-      `http://localhost:8000/api/v1/user/${params.id}`
+      `https://ride-task-backend.vercel.app/api/v1/user/${params.id}`
     );
     setuser(singlUser);
   };

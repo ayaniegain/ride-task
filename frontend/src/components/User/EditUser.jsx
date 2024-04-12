@@ -38,7 +38,7 @@ function EditUser() {
       email !== ""
     ) {
       try {
-        let newUser = await axios.put(`http://localhost:8000/api/v1/user/${id}`, {
+        let newUser = await axios.put(`https://ride-task-backend.vercel.app/api/v1/user/${id}`, {
           firstname: firstname,
           lastname: lastname,
           phone: phone,

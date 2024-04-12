@@ -27,7 +27,7 @@ function AddUser() {
       altphone !== "" &&
       email !== ""
     ) {
-      let newUser = await axios.post("http://localhost:8000/api/v1/user/", {
+      let newUser = await axios.post("https://ride-task-backend.vercel.app/api/v1/user/", {
         firstname: fname,
         lastname: lname,
         phone,
