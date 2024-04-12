@@ -43,6 +43,8 @@ function App() {
   let getAllUserData = async () => {
     let allUserData = await axios.get("http://localhost:8000/api/v1/user/");
 
+    console.log(allUserData);
+
     dispatch(getAllData(allUserData.data));
   };
   useEffect(() => {
