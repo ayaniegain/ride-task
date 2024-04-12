@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* //Navbr */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  margin: 4px 2px;
+  border-radius: 4px;
+  height: 40px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  font-size: 20px;
+
+  margin-left: 20px;
+  font-weight: bold;
+}
+.profile img {
+  height: 20px;
+  padding-right: 20px;
+}
+/* //AllUser */
+
+.allUser-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+
+
+}
+.nav-head {
+  display: flex;
+  align-items: center;
+  
+}
+
+.nav-head span{
+  font-size: 12px;
+  margin-left: 20px;
+}
+.nav-btn{
+  display: flex;
+  align-items: center;
+}
+
+.nav-btn button{
+  background-color: greenyellow;
+  color: white;
+  font-weight: bold;
+  height: 30px;
+  width: 150px;
+  border: none;
+  margin:10px 20px;
+  
+}
+.btn{
+  text-decoration: none;
+
+}
+
+.no-customer {
+
+  text-align: center;
+  
+
+}
+
+.no-customer h4 {
+
+  margin-top: 40px;
+  font-size: 20px;
+  color: rgb(238, 139, 156);
+
+}
+
+/* //table style/ */
+
+.table-container {
+  margin: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+
+.table th {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.table td,
+.table th {
+  padding: 10px;
+  border: none;
+  text-align: center;
+  border-radius:5px 5%;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: white;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.table tbody tr:hover {
+  background-color: #ddd;
+}
+
+.table button.show-button {
+  cursor: pointer;
+  background: none;
+  border: 1px solid rgb(11, 64, 11);
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.table button.show-button:hover {
+  background-color:  rgb(157, 204, 157);;
+  color: white;
+}
+
+.table .action-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.table .action-buttons button {
+  cursor: pointer;
+  padding: 5px;
+  margin-right: 5px;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+.first-btn{
+  
+  color: red;
+  border: 1px solid rgb(228, 71, 13);
+}
+
+.first-btn:hover{
+  background-color: rgb(206, 189, 192);
+}
+
+.second-btn{
+  color: rgb(34, 31, 218);
+  border: 1px solid rgb(58, 129, 222);
+  
+  
+}
+
+
+
+.second-btn:hover{
+  background-color: rgb(30, 172, 183);
+}
+
+/* //custom banner */
+
+.add-customer{
+  background-color: rgb(57, 158, 57);;
+  color:  white;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  
+  
+}
+
+.add-customer span{
+  font-size: 20px;
+  margin-left: 20px;
+  font-weight: bold;
+
+}
+
+/* //add customer design css */
+
+
+
+.form-container {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.form-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input-group-inline {
+  flex: 0 0 calc(50% - 10px);
+  margin: 0 10px 20px 0;
+}
+
+label {
+  display: inline-block;
+  font-weight: bold;
+  margin: 15px;
+}
+
+input {
+  width: calc(50% - 10px);
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 5px;
+}
+
+.button-section {
+  text-align: center;
+}
+
+.add-button {
+  background-color: rgb(57, 158, 57);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 150px;
+}
+
+.add-button:hover {
+  background-color: #65cb69;
+}
+
+
+/* //view customer */
+
+.info-main{
+  /* margin-top: 20px; */
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around ;
+}
+.info-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+}
+
+
+.info-item {
+  margin: 20px;
+  flex-basis: calc(50% - 40px); /* Each item takes half of the container width with margin */
+} 
+
+.label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333; /* Example color for label text */
+}
+
+.value {
+  font-size: 12px;
+  margin-left: 20px;
+  color: #666; /* Example color for value text */
+}
